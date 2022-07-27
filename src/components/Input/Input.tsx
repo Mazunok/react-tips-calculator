@@ -1,8 +1,11 @@
 import { StyledInput } from "./styles";
 
-export const Input = () => {
-    return <StyledInput placeholder="Enter bill">
-      
-    </StyledInput>;
+interface IProps{
+  placeholder: string
+}
+
+export const Input = ({placeholder}:IProps) => {
+    return <StyledInput
+    placeholder={placeholder} />
   };
   

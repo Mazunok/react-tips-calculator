@@ -1,7 +1,9 @@
-import { StyledButton } from "./styles";
+import { StyledButton, Text } from "./styles";
 
 export const Button = () => {
-    return <StyledButton>
-      
-    </StyledButton>;
-  };
+  return (
+    <StyledButton>
+      <Text>Ohhhoooo 🍻</Text>
+    </StyledButton>
+  );
+};
