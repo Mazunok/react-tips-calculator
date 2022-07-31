@@ -1,9 +1,9 @@
-import { StyledButton, Text } from "./styles";
+import { StyledButton } from "./styles";
 
-export const Button = () => {
-  return (
-    <StyledButton>
-      <Text>Ohhhoooo 🍻</Text>
-    </StyledButton>
-  );
+interface IProps {
+  isDisabled: boolean;
+}
+
+export const Button = ({ isDisabled }: IProps) => {
+  return <StyledButton type="submit">Ohhhoooo 🍻</StyledButton>;
 };

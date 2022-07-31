@@ -2,11 +2,11 @@ import { StylesConfig } from "react-select";
 import { ITipsOption } from "../../types";
 
 export const stylesConfig: StylesConfig<ITipsOption> = {
-  option: styles => ({
+  option: (styles) => ({
     ...styles,
     background: "#FFFFFF",
   }),
-  control: styles => ({
+  control: (styles) => ({
     ...styles,
     width: "327.5px",
     height: "68.35px",
