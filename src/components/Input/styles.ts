@@ -13,6 +13,9 @@ const StyledInput = styled.input`
   line-height: 26px;
   text-align: center;
   color: rgba(117, 108, 108, 0.6);
+  @media (min-width: 1024px) {
+    width: 456px;
+  }
 `;
 
 export { StyledInput };

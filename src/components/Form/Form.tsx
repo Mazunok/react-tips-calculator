@@ -1,7 +1,7 @@
 import { StyledForm, Title, Subtitle, TotalPrice } from "./styles";
 import { Input } from "../Input/Input";
 import { Button } from "../Button/Button";
-import { CustomSelect } from "../Select/Select";
+import { CustomSelect } from "../Select/CustomSelect";
 import { FormEvent, useEffect, useState } from "react";
 import { ITipsOption } from "../../types";
 import { SingleValue } from "react-select";

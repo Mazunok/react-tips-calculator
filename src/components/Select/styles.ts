@@ -8,7 +8,6 @@ export const stylesConfig: StylesConfig<ITipsOption> = {
   }),
   control: (styles) => ({
     ...styles,
-    width: "327.5px",
     height: "68.35px",
     borderRadius: "30px",
     background: "#FFFFFF",

@@ -11,6 +11,9 @@ const StyledButton = styled.button<{ disabled: boolean }>`
   font-size: 24px;
   color: #ffffff;
   opacity: ${({ disabled }) => (disabled ? "0.5" : "1")};
+  @media (min-width: 1024px) {
+    width: 459px;
+  }
 `;
 
 export { StyledButton };
