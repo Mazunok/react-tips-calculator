@@ -14,7 +14,7 @@ export const Form = () => {
     label: "10%",
     value: 10,
   });
-  const [disabled, setDisabled] = useState<boolean>(true);
+  const [isDisabled, setIsDisabled] = useState<boolean>(true);
   const [total, setTotal] = useState<number>(0);
 
   const handleSelect = (option: SingleValue<ITipsOption>): void => {
@@ -38,8 +38,8 @@ export const Form = () => {
   };
 
   useEffect((): void => {
-    bill.value && people.value ? setDisabled(false) : setDisabled(true);
-  },[bill,people]);
+    bill.value && people.value ? setIsDisabled(false) : setIsDisabled(true);
+  }, [bill, people]);
 
   return (
     <StyledForm onSubmit={handleSubmit}>
@@ -49,7 +49,7 @@ export const Form = () => {
       <Input placeholder="Enter people" {...people} />
       <CustomSelect tips={tips} handleSelect={handleSelect} />
       <TotalPrice>Total:{total.toFixed(2)}$</TotalPrice>
-      <Button disabled={isDisabled} />
+      <Button isDisabled={isDisabled} />
     </StyledForm>
   );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<{ disabled: boolean }>`
   border: none;
   width: 321px;
   height: 61px;
@@ -10,6 +10,7 @@ const StyledButton = styled.button`
   font-weight: 400;
   font-size: 24px;
   color: #ffffff;
+  opacity: ${({ disabled }) => (disabled ? "0.5" : "1")};
 `;
 
 export { StyledButton };
