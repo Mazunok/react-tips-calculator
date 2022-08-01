@@ -4,7 +4,7 @@ import { stylesConfig } from "./styles";
 
 interface IProps {
   tips: ITipsOption;
-  handleSelect: (option: SingleValue<ITipsOption>) => void;
+  handleSelect: (option: SingleValue<ITipsOption> | null) => void;
 }
 
 export const CustomSelect = ({ tips, handleSelect }: IProps) => {
